@@ -18,7 +18,8 @@
     "browser_specific_settings": {
         "gecko": {
             "id": "youtube-shorts-blocker@laith.dev",
-            "data_collection_permissions": {}
+            "data_collection_permissions": {
+                "required": []}
         }
     }
 }
