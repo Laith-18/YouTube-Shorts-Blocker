@@ -14,6 +14,16 @@
         "ytd-reel-item-renderer",
         "ytd-rich-shelf-renderer",
         "ytd-shorts",
+        console.log("Removed Shorts pass"),
+
+        // removes shorts from left sidebar
+        document.querySelectorAll("ytd-guide-entry-renderer").forEach(link => {
+            if (link.getAttribute("href") === "/shorts") {
+                const entry = link.closest("ytd-guide-entry-renderer");
+                if (entry) entry.remove();
+            }
+        })
+
 
         ];
 
